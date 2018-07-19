@@ -1,0 +1,29 @@
+{
+	"name": "jason-bird",
+	"version": "1.0.0",
+	"description": "Jason Bird",
+	"author": "Jason Bird",
+	"private": true,
+	"scripts": {
+		"dev": "nuxt",
+		"generate": "nuxt generate"
+	},
+	"dependencies": {
+		"nuxt": "^1.4.1",
+		"tailwindcss": "^0.6.4"
+	},
+		"devDependencies": {
+		"babel-eslint": "^8.2.5",
+		"cssnano": "^4.0.3",
+		"eslint": "^5.1.0",
+		"eslint-friendly-formatter": "^4.0.1",
+		"eslint-loader": "^2.1.0",
+		"eslint-plugin-vue": "^4.7.0",
+		"glob-all": "^3.1.0",
+		"postcss-import": "^11.1.0",
+		"postcss-loader": "^2.1.6",
+		"postcss-preset-env": "^5.2.2",
+		"postcss-url": "^7.3.2",
+		"purgecss-webpack-plugin": "^1.2.0"
+	}
+}
