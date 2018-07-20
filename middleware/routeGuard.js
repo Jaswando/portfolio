@@ -1,3 +1,3 @@
 export default function ({ store }) {
-	// store.commit('setIsMenuExpanded', false)
+	store.commit('setIsMenuExpanded', false)
 }
