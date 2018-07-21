@@ -5,7 +5,7 @@
 			<p>jason.bird55@gmail.com</p>
 		</div>
 		<a v-for="l in links" :key="l.icon" target="_blank" :href="l.url" class="ml-2">
-			<img class="h-8 w-8" :src="`../img/${l.icon}.png`">
+			<img class="h-8 w-8" :src="`./img/${l.icon}.png`">
 		</a>
 	</div>
 </template>
