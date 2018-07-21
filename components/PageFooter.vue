@@ -4,19 +4,11 @@
 			<p class="font-medium text-xl mb-1">Say Hello</p>
 			<p>jason.bird55@gmail.com</p>
 		</div>
-		<a v-for="l in links" :key="l.icon" target="_blank" :href="l.url" class="ml-2">
-			<img class="h-8 w-8" :src="`./img/${l.icon}.png`">
+		<a target="_blank" href="https://dribbble.com/Jaswando" class="ml-2">
+			<img class="h-8 w-8" src="~/assets/img/dribble.png">
+		</a>
+		<a target="_blank" href="https://www.linkedin.com/in/jbird55/" class="ml-2">
+			<img class="h-8 w-8" src="~/assets/img/linkedin.png">
 		</a>
 	</div>
 </template>
-
-<script>
-export default {
-	data: () => ({
-		links: [
-			{url: 'https://dribbble.com/Jaswando', icon: 'dribble'},
-			{url: 'https://www.linkedin.com/in/jbird55/', icon: 'linkedin'}
-		]
-	})
-}
-</script>
