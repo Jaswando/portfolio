@@ -1,5 +1,5 @@
 <template>
-	<div v-resize:debounce="onResize" :style="`background-image: url('/img/${name}/${heroSize}.png'); height: 34.375rem;`">
+	<div v-resize:debounce="onResize" :style="`background-image: url('../img/${name}/${heroSize}.png'); height: 34.375rem;`">
 		{{name}}
 		{{heroSize}}
 	</div>
