@@ -12,6 +12,7 @@ module.exports = {
 	mode: 'spa',
 	// Header
 	head: {
+		title: 'Jason Bird',
 		titleTemplate: '%s | Jason Bird',
 		htmlAttrs: { lang: 'en' },
 		meta: [
