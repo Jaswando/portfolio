@@ -33,7 +33,7 @@ export default {
 </script>
 
 <style scoped>
-.trigger img, .trigger p {
+.trigger img, .trigger p, .trigger > div {
 	transition: all .3s ease;
 }
 .trigger:hover img {
