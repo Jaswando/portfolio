@@ -11,7 +11,8 @@
 	},
 	"dependencies": {
 		"nuxt": "^1.4.1",
-		"tailwindcss": "^0.6.4"
+		"tailwindcss": "^0.6.4",
+		"v-img": "^0.2.0"
 	},
 	"devDependencies": {
 		"babel-eslint": "^8.2.5",
