@@ -3,7 +3,7 @@
 		<p class="mb-10 sm:mx-12 lg:w-2/3 text-2xl leading-normal">I'm a <span class="text-blue">Product Designer</span> focused on creating digital experiences by solving human problems first to drive usable & scalable design systems.</p>
 		<div class="sm:flex flex-wrap -mx-2">
 			<div v-for="w in works" :key="w.name" class="sm:w-1/2 px-2 mb-4">
-				<div @click="$router.push(`/${w.name}`)" class="bg-contain relative cursor-pointer trigger" :style="`padding-top: 56.25%; background-image: url(/img/${w.name}.png)`">
+				<div @click="$router.push(`/${w.name}`)" class="bg-contain relative cursor-pointer trigger" :style="`padding-top: 56.25%; background-image: url(/portfolio/img/${w.name}.png)`">
 					<div class="absolute pin bg-blue-90 work-overlay">
 						<div class="m-auto text-center text-white">
 							<p class="text-2xl font-medium mb-2">{{w.title}}</p>
