@@ -3,15 +3,17 @@
 		<p class="mb-10 sm:mx-12 lg:w-2/3 text-2xl leading-normal">I'm a <span class="text-blue">Product Designer</span> focused on creating digital experiences by solving human problems first to drive usable & scalable design systems.</p>
 		<div class="sm:flex flex-wrap -mx-2">
 			<div v-for="w in works" :key="w.name" class="sm:w-1/2 px-2 mb-4">
-				<nuxt-link :to="`/${w.name}`"><div class="overflow-hidden cursor-pointer relative trigger">
-					<img class="w-full" :src="`./img/${w.name}.png`">
-					<div class="absolute pin bg-transparent hover:bg-blue-90 flex">
-						<div class="m-auto text-center text-white">
-							<p class="text-2xl font-medium mb-2">{{w.title}}</p>
-							<p>{{w.text}}</p>
+				<nuxt-link :to="`/${w.name}`">
+					<div class="overflow-hidden cursor-pointer relative trigger">
+						<img class="w-full" :src="`./img/${w.name}.png`">
+						<div class="absolute pin bg-transparent hover:bg-blue-90 flex">
+							<div class="m-auto text-center text-white">
+								<p class="text-2xl font-medium mb-2">{{w.title}}</p>
+								<p>{{w.text}}</p>
+							</div>
 						</div>
 					</div>
-				</div></nuxt-link>
+				</nuxt-link>
 			</div>
 		</div>
 	</div>
