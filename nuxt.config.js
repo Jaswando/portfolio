@@ -22,7 +22,7 @@ module.exports = {
 		],
 		link: [{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}],
 		script: [
-			{ src: '/gh-spa.js' }
+			{ src: '/portfolio/gh-spa.js' }
 		]
 	},
 	// Customize the progress bar color
