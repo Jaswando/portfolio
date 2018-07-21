@@ -18,10 +18,7 @@
 
 <script>
 export default {
-	head: {
-		title: 'Work',
-		meta: [{ hid: 'description', name: 'description', content: 'Work' }]
-	},
+	head: {title: 'Work'},
 	data: () => ({
 		works: [
 			{name: 'club-app', title: 'Club App', text: 'iOS & Android'},

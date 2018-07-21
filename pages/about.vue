@@ -13,9 +13,6 @@
 
 <script>
 export default {
-	head: {
-		title: 'About',
-		meta: [{ hid: 'description', name: 'description', content: 'About' }]
-	}
+	head: {title: 'About'}
 }
 </script>
