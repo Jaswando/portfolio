@@ -5,6 +5,7 @@
 <script>
 export default {
 	created () {
+		console.log('404')
 		let segmentCount = 1
 		let l = window.location
 		l.replace(
