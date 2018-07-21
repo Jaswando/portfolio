@@ -12,7 +12,8 @@
 	"dependencies": {
 		"nuxt": "^1.4.1",
 		"tailwindcss": "^0.6.4",
-		"v-img": "^0.2.0"
+		"v-img": "^0.2.0",
+		"vue-resize-directive": "^1.0.1"
 	},
 	"devDependencies": {
 		"babel-eslint": "^8.2.5",
