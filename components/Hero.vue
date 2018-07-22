@@ -14,7 +14,7 @@
 				</div>
 			</div>
 		</div>
-		<div v-resize:debounce="onResize" class="bg-center bg-cover" :style="`background-image: url('./img/${name}/${heroSize}.png'); height: 34.375rem;`"></div>
+		<div v-resize:debounce="onResize" class="bg-center bg-cover" :style="`background-image: url('../img/${name}/${heroSize}.png'); height: 34.375rem;`"></div>
 	</div>
 </template>
 
