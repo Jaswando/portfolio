@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="container py-6 flex">
-			<p class="font-medium text-2xl">Jason Bird</p>
+			<nuxt-link class="font-medium text-xl" to="/">Jason Bird</nuxt-link>
 			<div class="hidden md:block ml-auto">
 				<nuxt-link v-for="l in links" :key="l.text" class="uppercase ml-6 font-medium hover:text-blue" :to="l.path">{{l.text}}</nuxt-link>
 			</div>

@@ -1,7 +1,7 @@
 <template>
 	<div :class="classProp">
 		<p class="mb-3 font-medium text-2xl">{{header}}</p>
-		<p>{{text}}</p>
+		<p class="leading-normal">{{text}}</p>
 	</div>
 </template>
 

@@ -1,20 +1,20 @@
 <template>
 	<div>
-		<div class="container py-12 md:px-24">
+		<div v-resize:debounce="onResize" class="bg-center bg-cover" :style="`background-image: url('${baseImgUrl+name}/${heroW}.png'); height: ${heroH}rem;`"></div>
+		<text-section class="py-12">
 			<p class="font-medium text-3xl mb-2">{{title}}</p>
-			<p class="mb-10">{{desc}}</p>
-			<div class="md:flex">
-				<div class="mb-4 md:mb-0 md:w-1/4">
+			<p class="mb-10 leading-normal">{{desc}}</p>
+			<div class="lg:flex -mx-2">
+				<div class="mb-4 lg:mb-0 lg:w-1/4 px-2">
 					<p class="font-medium mb-2">MY ROLE</p>
-					<p>{{role}}</p>
+					<p class="leading-normal">{{role}}</p>
 				</div>
-				<div class="md:w-3/4">
+				<div class="lg:w-3/4 px-2">
 					<p class="font-medium mb-2">THE TEAM</p>
-					<p>{{team.join(', ')}}</p>
+					<p class="leading-normal">{{team.join(', ')}}</p>
 				</div>
 			</div>
-		</div>
-		<div v-resize:debounce="onResize" class="bg-center bg-cover" :style="`background-image: url('${baseImgUrl+name}/${heroSize}.png'); height: 34.375rem;`"></div>
+		</text-section>
 	</div>
 </template>
 
@@ -29,13 +29,17 @@ export default {
 		role: {type: String, required: true},
 		team: {type: Array, required: true}
 	},	
-	created () { this.computeHeroSize(window.innerWidth) },
+	created () { this.computeHeroW(window.innerWidth) },
 	methods: {
-		onResize (e) { this.computeHeroSize(e.offsetWidth) },
-		computeHeroSize (width) { this.heroSize = [576, 768, 992, 1200, 1920].find(s => s >= width) || 1920 }
+		onResize (e) { this.computeHeroW(e.offsetWidth) },
+		computeHeroW (width) {
+			this.heroW = [576, 768, 992, 1200, 1920].find(s => s >= width) || 1920
+			this.heroH = width > 576 ? 34.375 : 18.75
+		}
 	},
 	data: () => ({
-		heroSize: null
+		heroW: null,
+		heroH: null
 	})
 }
 </script>
