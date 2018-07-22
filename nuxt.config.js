@@ -63,6 +63,7 @@ module.exports = {
 		}
 	},
 	css: ['@/assets/css/global.css'],
+	plugins: ['~/plugins/main.js'],
 	// This option is given directly to the vue-router Router constructor
 	router: {
 		base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/portfolio/' : '',
