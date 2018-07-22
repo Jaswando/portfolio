@@ -17,18 +17,13 @@
 		<text-section class="pt-12">
 			<paragraph header="Designs" text="With a basic set of components and a mass of wireframes and flows I was ready to start applying the visual layer. The visuals had to strongly represent the teams brand while remaining flexible enough that components can be easily styled for other teams and work wth any content on the fly within the app. To do so I set about maintaining a consistent visual language."/>
 		</text-section>
-		<div class="container">
-			<div class="flex flex-wrap -mx-4">
-				<div v-for="d in designs" :key="d" class="sm:w-1/2 md:w-1/4 px-4 mb-12">
-					<img v-img="{group:'designs',cursor:'zoom-in'}" :src="`${baseImgUrl}club-app/designs/${d}`">
-				</div>
-			</div>
-		</div>
+		<gallery :imgs="designs" page="club-app" folder="designs"/>
 	</div>
 </template>
 
 <script>
 export default {
+	head: {title: 'Football club app'},
 	computed: {
 		designs () {
 			const context = require.context('~/static/img/club-app/designs', true, /\.png$/)
