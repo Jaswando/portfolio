@@ -19,7 +19,7 @@
 		</text-section>
 		<div class="container">
 			<div class="flex flex-wrap -mx-4">
-				<div v-for="d in designs" :key="d" class="sm:w-1/2 md:w-1/4 xl:w-1/6 px-4 mb-12">
+				<div v-for="d in designs" :key="d" class="sm:w-1/2 md:w-1/4 px-4 mb-12">
 					<img v-img="{group:'designs',cursor:'zoom-in'}" :src="`${baseImgUrl}club-app/designs/${d}`">
 				</div>
 			</div>
