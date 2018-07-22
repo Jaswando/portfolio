@@ -69,5 +69,8 @@ module.exports = {
 		base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/portfolio/' : '',
 		linkActiveClass: 'is-active',
 		middleware: 'routeGuard'
+	},
+	env: {
+		baseImgUrl: process.env.DEPLOY_ENV === 'GH_PAGES' ? 'https://jaswando.github.io/portfolio/img/' : '/img/'
 	}
 }
