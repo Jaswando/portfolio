@@ -33,3 +33,6 @@ a {
 	text-decoration: none;
 	@apply text-black
 }
+li {
+	@apply leading-normal
+}
