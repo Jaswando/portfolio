@@ -21,9 +21,7 @@ module.exports = {
 			{ hid: 'description', name: 'description', content: 'A Product Designer focused on creating digital experiences by solving human problems first to drive usable & scalable design systems' }
 		],
 		link: [{rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}],
-		script: [
-			{ src: '/portfolio/gh-spa.js' }
-		]
+		script: process.env.DEPLOY_ENV === 'GH_PAGES' ? [{src: '/portfolio/gh-spa.js'}] : [] 
 	},
 	// Customize the progress bar color
 	loading: false,

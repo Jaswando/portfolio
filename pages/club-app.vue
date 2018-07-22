@@ -9,24 +9,31 @@
 		<div class="py-12 bg-grey-lighter">
 			<div class="container">
 				<div class="md:flex -mx-2">
-					<div v-for="x in ['left', 'right']" :key="x" class="md:w-1/2 px-2 mb-4"><img :src="`${baseImgUrl}club-app/sketch-${x}.png`"></div>
+					<div v-for="x in ['left', 'right']" :key="x" class="md:w-1/2 px-2 mb-4"><img v-img:sketch :src="`${baseImgUrl}club-app/sketch-${x}.png`"></div>
 				</div>
-				<img class="w-full" :src="`${baseImgUrl}club-app/userflow.png`">
+				<img v-img:sketch class="w-full" :src="`${baseImgUrl}club-app/userflow.png`">
 			</div>
 		</div>
 		<div class="container pt-12 md:px-24">
 			<paragraph header="Designs" text="With a basic set of components and a mass of wireframes and flows I was ready to start applying the visual layer. The visuals had to strongly represent the teams brand while remaining flexible enough that components can be easily styled for other teams and work wth any content on the fly within the app. To do so I set about maintaining a consistent visual language."/>
 		</div>
 		<div class="container">
-
+			<div class="flex flex-wrap -mx-4">
+				<div v-for="d in designs" :key="d" class="sm:w-1/2 md:w-1/4 xl:w-1/6 px-4 mb-12">
+					<img v-img:designs :src="`${baseImgUrl}club-app/designs/${d}`">
+				</div>
+			</div>
 		</div>
 	</div>
 </template>
 
 <script>
 export default {
-	data: () => ({
-
-	})
+	computed: {
+		designs () {
+			const context = require.context('~/static/img/club-app/designs', true, /\.png$/)
+			return context.keys().map(k => k.split('/')[1])
+		}
+	}
 }
 </script>
