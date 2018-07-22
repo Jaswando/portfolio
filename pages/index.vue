@@ -1,5 +1,5 @@
 <template>
-	<div class="container mx-auto px-4 py-10">
+	<div class="container py-12">
 		<p class="mb-10 sm:mx-12 lg:w-2/3 text-2xl leading-normal">I'm a <span class="text-blue">Product Designer</span> focused on creating digital experiences by solving human problems first to drive usable & scalable design systems.</p>
 		<div class="sm:flex flex-wrap -mx-2">
 			<div v-for="w in works" :key="w.name" class="sm:w-1/2 px-2 mb-4">

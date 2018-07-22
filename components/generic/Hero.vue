@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="container mx-auto px-4 py-10 md:px-24">
+		<div class="container py-12 md:px-24">
 			<p class="font-medium text-3xl mb-2">{{title}}</p>
 			<p class="mb-10">{{desc}}</p>
 			<div class="md:flex">

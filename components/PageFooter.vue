@@ -1,5 +1,5 @@
 <template>
-	<div class="container mx-auto px-4 py-10 flex border-t">
+	<div class="container py-12 flex border-t">
 		<div class="mr-auto">
 			<p class="font-medium text-xl mb-1">Say Hello</p>
 			<p>jason.bird55@gmail.com</p>
