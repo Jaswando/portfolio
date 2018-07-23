@@ -11,13 +11,14 @@
 				</span>
 			</button>
 		</div>
-		<transition name="slide-fade">
-			<div v-show="isMenuExpanded" class="md:hidden border-t border-b pt-12 flex flex-col">
-				<nuxt-link v-for="l in links" :key="l.text" class="mb-12 mx-auto font-medium hover:text-blue" :to="l.path">
-					<span @click="$store.commit('setIsMenuExpanded', false)">{{l.text}}</span>
-				</nuxt-link>
-			</div>
-		</transition>
+		<div :class="'md:hidden overflow-hidden flex flex-col smooth-menu '+(isMenuExpanded?'h-32 border-b':'h-0')">
+			<nuxt-link class="my-6 mx-auto font-medium hover:text-blue" to="/">
+				<span @click="$store.commit('setIsMenuExpanded', false)">Work</span>
+			</nuxt-link>
+			<nuxt-link class="mb-6 mx-auto font-medium hover:text-blue" to="/about">
+				<span @click="$store.commit('setIsMenuExpanded', false)">About</span>
+			</nuxt-link>
+		</div>
 	</div>
 </template>
 
@@ -25,25 +26,12 @@
 export default {
 	computed: {
 		isMenuExpanded () { return this.$store.state.isMenuExpanded }
-	},
-	data: () => ({
-		links: [
-			{text: 'Work', path: '/'},
-			{text: 'About', path: '/about'}
-		]
-	})
+	}
 }
 </script>
 
-<style>
-.slide-fade-enter-active {
+<style scoped>
+.smooth-menu {
 	transition: all .3s ease;
-}
-.slide-fade-leave-active {
-	transition: all .15s ease;
-}
-.slide-fade-enter, .slide-fade-leave-to {
-	transform: translateY(-1rem);
-	opacity: 0;
 }
 </style>

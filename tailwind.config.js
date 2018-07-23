@@ -503,6 +503,7 @@ module.exports = {
   height: {
     'auto': 'auto',
     'px': '1px',
+    '0': '0rem',
     '1': '0.25rem',
     '2': '0.5rem',
     '3': '0.75rem',
