@@ -36,3 +36,6 @@ a {
 li {
 	@apply leading-normal
 }
+button:focus {
+	@apply outline-none
+}

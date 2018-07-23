@@ -5,18 +5,19 @@
 			<div class="hidden md:block ml-auto">
 				<nuxt-link v-for="l in links" :key="l.text" class="uppercase ml-6 font-medium hover:text-blue" :to="l.path">{{l.text}}</nuxt-link>
 			</div>
-			<svg @click="$store.commit('setIsMenuExpanded', true)" class="h-5 w-5 cursor-pointer md:hidden ml-auto" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+			<button :class="'hamburger hamburger--spin md:hidden ml-auto p-0'+(isMenuExpanded?' is-active':'')" type="button" @click="$store.commit('setIsMenuExpanded', !isMenuExpanded)">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
 		</div>
-		<div v-show="isMenuExpanded" class="fixed bg-white pin-t pin-r w-full h-full z-50">
-			<div class="container py-6 flex">
-				<img @click="$store.commit('setIsMenuExpanded', false)" class="h-5 w-5 cursor-pointer ml-auto" src="~/assets/img/black-cross.png">
-			</div>
-			<div class="border-t flex flex-col">
-				<nuxt-link v-for="l in links" :key="l.text" class="mt-10 mx-auto font-medium hover:text-blue" :to="l.path">
+		<transition name="slide-fade">
+			<div v-show="isMenuExpanded" class="md:hidden border-t border-b pt-12 flex flex-col">
+				<nuxt-link v-for="l in links" :key="l.text" class="mb-12 mx-auto font-medium hover:text-blue" :to="l.path">
 					<span @click="$store.commit('setIsMenuExpanded', false)">{{l.text}}</span>
 				</nuxt-link>
 			</div>
-		</div>
+		</transition>
 	</div>
 </template>
 
@@ -33,3 +34,16 @@ export default {
 	})
 }
 </script>
+
+<style>
+.slide-fade-enter-active {
+	transition: all .3s ease;
+}
+.slide-fade-leave-active {
+	transition: all .15s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to {
+	transform: translateY(-1rem);
+	opacity: 0;
+}
+</style>

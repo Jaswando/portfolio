@@ -1,5 +1,5 @@
 <template>
-	<div class="container py-12 md:px-24">
+	<div class="container py-4 md:py-12 md:px-24">
 		<div class="sm:flex -mx-2">
 			<div class="sm:w-1/2 px-2 mb-4">
 				<img class="w-full" src="~/assets/img/about-photo.png">
