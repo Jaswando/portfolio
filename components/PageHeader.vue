@@ -3,7 +3,8 @@
 		<div class="container py-6 flex">
 			<nuxt-link class="font-medium text-xl" to="/">Jason Bird</nuxt-link>
 			<div class="hidden md:block ml-auto">
-				<nuxt-link v-for="l in links" :key="l.text" class="uppercase ml-6 font-medium hover:text-blue" :to="l.path">{{l.text}}</nuxt-link>
+				<nuxt-link class="uppercase ml-6 font-medium hover:text-blue" to="/">Work</nuxt-link>
+				<nuxt-link class="uppercase ml-6 font-medium hover:text-blue" to="/about">About</nuxt-link>
 			</div>
 			<button :class="'hamburger hamburger--spin md:hidden ml-auto p-0'+(isMenuExpanded?' is-active':'')" type="button" @click="$store.commit('setIsMenuExpanded', !isMenuExpanded)">
 				<span class="hamburger-box">
