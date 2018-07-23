@@ -1,8 +1,8 @@
 <template>
 	<div class="container">
-		<p class="py-12 md:py-48 sm:mx-12 lg:w-2/3 text-2xl md:text-4xl leading-normal">I'm a <span class="text-blue">Product Designer</span> focused on creating digital experiences by solving human problems first to drive usable & scalable design systems.</p>
+		<p class="animated fadeIn py-12 md:py-48 sm:mx-12 lg:w-2/3 text-2xl md:text-4xl leading-normal">I'm a <span class="text-blue">Product Designer</span> focused on creating digital experiences by solving human problems first to drive usable & scalable design systems.</p>
 		<div class="sm:flex flex-wrap -mx-2 mb-8">
-			<div v-for="w in works" :key="w.name" class="sm:w-1/2 px-2 mb-4">
+			<div v-for="w in works" :key="w.name" class="sm:w-1/2 px-2 mb-4 animated fadeInUp">
 				<nuxt-link :to="`/${w.name}`">
 					<div class="overflow-hidden cursor-pointer relative trigger">
 						<img class="w-full" :src="`./img/${w.name}.png`">

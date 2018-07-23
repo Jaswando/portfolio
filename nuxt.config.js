@@ -60,7 +60,7 @@ module.exports = {
 			}
 		}
 	},
-	css: ['hamburgers/dist/hamburgers.css', '@/assets/css/global.css'],
+	css: ['animate.css/animate.min.css', 'hamburgers/dist/hamburgers.css', '@/assets/css/global.css'],
 	plugins: ['~/plugins/main.js'],
 	// This option is given directly to the vue-router Router constructor
 	router: {

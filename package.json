@@ -10,6 +10,7 @@
 		"gh": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate && push-dir --dir=dist --branch=gh-pages --cleanup"
 	},
 	"dependencies": {
+		"animate.css": "^3.6.1",
 		"hamburgers": "^0.9.3",
 		"nuxt": "^1.4.1",
 		"tailwindcss": "^0.6.4",
