@@ -18,7 +18,7 @@
 			</div>
 		</div>
         <text-section>
-            <p class="leading-normal mb-12">For a user to successfully hold a ticket on their phone, they must first have a FanScore wallet account and then successfully link the ticket account in which they purchased from. Detailing this user flow also uncovered edge cases based on the method of linking an account:</p>
+			<paragraph text="For a user to successfully hold a ticket on their phone, they must first have a FanScore wallet account and then successfully link the ticket account in which they purchased from. Detailing this user flow also uncovered edge cases based on the method of linking an account:"/>
             <ul class="list-reset mb-12">
 				<li>1. Linking the same email used for FanScore wallet</li>
 				<li>2. Linking a different email to FanScore wallet</li>

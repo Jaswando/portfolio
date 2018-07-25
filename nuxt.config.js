@@ -54,7 +54,7 @@ module.exports = {
 							extractor: TailwindExtractor,
 							extensions: ["vue"]
 						}],
-						whitelist: ['html', 'body']
+						whitelist: ['html', 'body', 'md:w-1/3', 'md:w-1/4', 'md:w-2/3']
 					})
 				)
 			}
