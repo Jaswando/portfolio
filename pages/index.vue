@@ -24,11 +24,11 @@ export default {
 	data: () => ({
 		works: [
 			{name: 'club-app', title: 'Club App', text: 'iOS & Android'},
-			{name: 'our-league', title: 'Our League', text: 'iOS & Android'},
+			{name: 'our-league', title: 'Rugby League Membership', text: 'iOS, Android & Web'},
 			{name: 'rewards', title: 'Aston Villa Rewards', text: 'iOS & Android'},
 			{name: 'tickets', title: 'Tickets', text: 'iOS & Android'},
-			{name: 'cast', title: 'Cast', text: 'Cast'},
-			{name: 'dashboard', title: 'Dashboard', text: 'Dashboard'}
+			{name: 'cast', title: 'InCrowd Cast', text: 'Windows Application'},
+			{name: 'dashboard', title: 'Insights Dashboard', text: 'Web'}
 		]
 	})
 }
