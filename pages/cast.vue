@@ -2,7 +2,7 @@
 	<div>
 		<hero name="cast" title="InCrowd Cast" role="Product Design Lead" :team="['CTO','Software Developer (x4)']"/>
 		<text-section>
-			<paragraph header="Overview" text="Alongside the consumer based products InCrowd was also developing B2B software which would help connect the FanScore Universe. The software was created for clients to generate playlists of video to display on stadium perimeters and big screens and at a later stage would support plugins for Fans to see predictor results Man of the match results on the big screen. This project has been largely developer driven until now..."/>
+			<paragraph header="Overview" text="Alongside the consumer based products InCrowd was also developing B2B software which would help connect the FanScore Universe. The software was created for clients to generate playlists of video to display on stadium perimeters and big screens and at a later stage would support plugins to enable fan engagement via the the predictor on the big screen. This project has been largely developer driven until now..."/>
 		</text-section>
 		<gallery :imgs="overview" page="cast" folder="overview" colSize="3"/>
 		<text-section>
@@ -41,9 +41,9 @@
 		<text-section>
 			<paragraph classProp="mb-6" header="Visual design" text="I started creating high fidelity mockups from my wireframes, given the tool like nature of the product I wanted to focus on:"/>
 			<ul class="list-reset mb-12">
-				<li>Accessibility -  Size of text and use of contrast</li>
-				<li>Dark theme -  for long periods of use to avoid eye strain</li>
-				<li>Brand – Using the existing brand to accent the dark theme</li>
+				<li class="font-bold">Accessibility -  Size of text and use of contrast</li>
+				<li class="font-bold">Dark theme -  for long periods of use to avoid eye strain</li>
+				<li class="font-bold">Brand – Using the existing brand to accent the dark theme</li>
 			</ul>
 		</text-section>
 		<div class="py-12 bg-grey-lighter mb-12">
@@ -54,7 +54,7 @@
 			</div>
 		</div>
 		<text-section>
-			<paragraph text="As my designs progressed I started to build an extensive library of components that I could reuse anywhere in the software to maintain consistency. This was important to me so I could focus on designing a system that is scalable as product evolves."/>
+			<paragraph text="As my designs progressed I started to build an extensive library of components that I could reuse anywhere in the software to maintain consistency. This was important to me so I could focus on designing a system that is scalable as the product evolves."/>
 		</text-section>
 		<div class="container mb-12">
 			<div class="md:flex -mx-4">

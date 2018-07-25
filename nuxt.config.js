@@ -24,7 +24,7 @@ module.exports = {
 		script: process.env.DEPLOY_ENV === 'GH_PAGES' ? [{src: '/portfolio/gh-spa.js'}] : [] 
 	},
 	// Customize the progress bar color
-	loading: false,
+	loading: {color: '#1869FF', height: '4px'},
 	build: {
 		extractCSS: true,
 		vendor: ['babel-polyfill'],

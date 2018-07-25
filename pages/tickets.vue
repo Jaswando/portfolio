@@ -2,14 +2,13 @@
 	<div>
 		<hero name="tickets" title="FanScore Tickets" role="Product Design Lead" :team="['Product Manager','iOS Developer','Android Developer','Backend Developer']"/>
 		<text-section>
-			<paragraph header="Overview" text="While working at InCrowd I lead and managed the design of our ticket wallet solution. I was working with project managers & developers on what would be our first step in to the ticketing world to deliver a focused MVP which would revolutionize how fans manage their tickets and improve the stadium attendance experience."/>
-            <p class="leading-normal font-medium text-blue">The Challenge</p>
+			<paragraph header="Overview" text="While working at InCrowd I lead and managed the design of our ticket wallet solution. I was working with project managers & developers on what would be our first step in to the ticketing world to deliver a focused MVP which would revolutionize how fans manage their tickets and improve the stadium attendance and experience."/>
+            <p class="leading-normal font-medium">The Challenge</p>
             <ul class="list-reset mb-12">
-				<li>- Understand the existing fan process of purchasing or receiving a ticket, then using it for access</li>
-				<li>- Understanding the technical limitations regarding the account tickets are purchased under and how that is then displayed in app</li>
-				<li>- Communicating with the existing ticket process in a more efficient digital process</li>
+				<li>- Understand the existing fan process of purchasing or receiving a ticket, then using it for access.</li>
+				<li>- Understanding the technical limitations regarding the account tickets are purchased under and how that is then displayed in app.</li>
 			</ul>
-            <paragraph header="User needs" text="To get this off of the ground we decided to work exclusively with Birmingham City FC which allowed us work closely with a trial group of fans that we could test & validate designs while also giving the ability schedule real life test days. To start we conducted User interviews and meetings with Birmingham City this helped us establish initial processes and frictions with the existing system."/>
+            <paragraph header="User needs" text="To get this off of the ground we decided to work exclusively with Birmingham City FC. This allowed us to work closely with a trial group of fans that we could test & validate designs, while also providing the ability to schedule real life test days. To start we conducted User interviews and meetings with Birmingham City this helped us establish initial processes and frictions with the existing system."/>
             <paragraph header="User Flow" text="I setup a workshop with our developers to run through the API details we received. This would help inform the user flows so we can compromise on an effective user experience while retaining best performance."/>
         </text-section>
         <div class="py-12 bg-grey-lighter mb-12">
@@ -28,7 +27,7 @@
 		</text-section>
         <gallery :imgs="wireframes" page="tickets" folder="wireframes"/>
 		<text-section>
-			<paragraph header="Visual design" text="The visual design would follow suit to the existing app while taking a nod from the ticket branding that was present on the physical ticket in the form of polygons these assets were then made interchangeable between clubs so to keep the product scalable to be reused for multiple clubs."/>
+			<paragraph header="Visual design" text="The visual design would follow suit to the existing app while taking a nod from the ticket branding that was present on the physical ticket in the form of polygons. These assets were then made interchangeable between clubs so to keep the product scalable for multiple clubs."/>
 		</text-section>
 		<gallery :imgs="designs" page="tickets" folder="designs"/>
 	</div>
