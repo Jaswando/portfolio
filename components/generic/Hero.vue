@@ -2,8 +2,7 @@
 	<div>
 		<div v-resize:debounce="onResize" class="bg-center bg-cover" :style="`background-image: url('${baseImgUrl+name}/${heroW}.png'); height: ${heroH}rem;`"></div>
 		<text-section class="py-12">
-			<p class="font-medium text-3xl mb-2">{{title}}</p>
-			<p class="mb-10 leading-normal">{{desc}}</p>
+			<p class="font-medium text-3xl mb-12">{{title}}</p>
 			<div class="lg:flex -mx-2">
 				<div class="mb-4 lg:mb-0 lg:w-1/4 px-2">
 					<p class="font-medium mb-2">MY ROLE</p>

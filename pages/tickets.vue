@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<hero name="tickets" title="FanScore Tickets" desc="Helping build lasting connections between fans and the clubs they support" role="Product Design Lead" :team="['Product Manager','iOS Developer','Android Developer','Backend Developer']"/>
+		<hero name="tickets" title="FanScore Tickets" role="Product Design Lead" :team="['Product Manager','iOS Developer','Android Developer','Backend Developer']"/>
 		<text-section>
 			<paragraph header="Overview" text="While working at InCrowd I lead and managed the design of our ticket wallet solution. I was working with project managers & developers on what would be our first step in to the ticketing world to deliver a focused MVP which would revolutionize how fans manage their tickets and improve the stadium attendance experience."/>
             <p class="leading-normal font-medium text-blue">The Challenge</p>

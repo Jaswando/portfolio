@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<hero name="our-league" title="Rugby League Membership" desc="The Rugby League wanted to go a step further to connect fans by introducng membership. I worked on designing this multiplatform product to work on both Web & App." role="Product Design Lead" :team="['Product Manager','iOS Developer','Android Developer','Web Developer','Backend Developer']"/>
+		<hero name="our-league" title="Rugby League Membership" role="Product Design Lead" :team="['Product Manager','iOS Developer','Android Developer','Web Developer','Backend Developer']"/>
 		<text-section>
 			<paragraph header="Overview" text="The Rugby Football league approached InCrowd with the task of developing a multiplatform membership solution. They wanted to bring together their digital channels to enroll users in a free membership which will host everything InCrowd’s club app offering delivers but overtime to scale the product to be the go to place for community player stats dashboard, Tickets, Live streaming, reward plans and very long term start to look at how the free membership model can adapt to paid membership service."/>
 			<paragraph header="User needs" text="This was a project with a lot of moving parts so it was essential to survey the client to uncover their business goals and what they wanted to achieve so we could establish realistic goals to work toward as an MVP product. Further to this we agreed how features will be attributed across a roadmap the key points that came out of this were"/>

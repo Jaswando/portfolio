@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<hero name="cast" title="InCrowd Cast" desc="Helping build lasting connections between fans and the clubs they support" role="Product Design Lead" :team="['CTO','Software Developer (x4)']"/>
+		<hero name="cast" title="InCrowd Cast" role="Product Design Lead" :team="['CTO','Software Developer (x4)']"/>
 		<text-section>
 			<paragraph header="Overview" text="Alongside the consumer based products InCrowd was also developing B2B software which would help connect the FanScore Universe. The software was created for clients to generate playlists of video to display on stadium perimeters and big screens and at a later stage would support plugins for Fans to see predictor results Man of the match results on the big screen. This project has been largely developer driven until now..."/>
 		</text-section>

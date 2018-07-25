@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<hero name="club-app" title="Football club app" desc="Helping build lasting connections between fans and the clubs they support" role="Product Design Lead" :team="['Product Manager','iOS Developer','Android Developer','Backend Developer']"/>
+		<hero name="club-app" title="Football club app" role="Product Design Lead" :team="['Product Manager','iOS Developer','Android Developer','Backend Developer']"/>
 		<text-section>
 			<paragraph header="Overview" text="Mid 2016 I joined an 8 person start-up called InCrowd Sports to lead the design for their football club product which set out to be the hub of fan engagement. The app would be for football fans to digest the latest news for their supported clubs aswell as a place to receive live match updates. There was already an existing version of the app my challenge was to improve the usability and the visual design."/>
 			<paragraph header="Information Hierarchy" text="This project began by identifying the information architecture with the outcome of producing a site map. This would show a holistic view of the apps content. Doing this helped to group similar content to reduce unnecessary screens and how they will be navigated."/>

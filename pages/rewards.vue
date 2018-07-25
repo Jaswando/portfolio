@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<hero name="rewards" title="Aston Villa Rewards" desc="Helping build lasting connections between fans and the clubs they support" role="Product Design Lead" :team="['Product Manager','iOS Developer','Android Developer','Backend Developer']"/>
+		<hero name="rewards" title="Aston Villa Rewards" role="Product Design Lead" :team="['Product Manager','iOS Developer','Android Developer','Backend Developer']"/>
 		<text-section>
 			<paragraph header="Overview" text="With the success of rolling out the new club app to our football clients, we started to receive client feedback in to new features they wanted. We vetted any feedback based on how much it aligned with our own roadmap goals and how it would sit on the platform and not just exclusively one clients app. One of the features that we decided to develop further was a loyalty rewards scheme which would grant users points which could be exchanged for merchandise or experiences."/>
 			<paragraph header="Wireframes" text="I worked directly with the both with internal stakeholders and the Aston Villa FC to determine the goals, scope and future market placement of rewards. Before starting the process, we spent some time discussing the vision for the feature and sketching ideas on a whiteboard for a shared vision. After the whiteboarding process I moved onto making wireframes."/>
