@@ -41,9 +41,9 @@
 		<text-section>
 			<paragraph classProp="mb-6" header="Visual design" text="I started creating high fidelity mockups from my wireframes, given the tool like nature of the product I wanted to focus on:"/>
 			<ul class="list-reset mb-12">
-				<li class="font-bold">Accessibility -  Size of text and use of contrast</li>
-				<li class="font-bold">Dark theme -  for long periods of use to avoid eye strain</li>
-				<li class="font-bold">Brand – Using the existing brand to accent the dark theme</li>
+				<li><span class="font-bold">Accessibility</span> -  Size of text and use of contrast</li>
+				<li><span class="font-bold">Dark theme</span> -  for long periods of use to avoid eye strain</li>
+				<li><span class="font-bold">Brand</span> – Using the existing brand to accent the dark theme</li>
 			</ul>
 		</text-section>
 		<div class="py-12 bg-grey-lighter mb-12">
