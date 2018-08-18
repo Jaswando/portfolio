@@ -3,7 +3,7 @@ const glob = require('glob-all')
 const path = require('path')
 
 class TailwindExtractor {
-	static extract(content) {
+	static extract (content) {
 		return content.match(/[A-Za-z0-9-_:\/]+/g) || []
 	}
 }
@@ -52,7 +52,7 @@ module.exports = {
 						]),
 						extractors: [{
 							extractor: TailwindExtractor,
-							extensions: ["vue"]
+							extensions: ['vue']
 						}],
 						whitelist: ['html', 'body', 'md:w-1/3', 'md:w-1/4', 'md:w-2/3']
 					})
