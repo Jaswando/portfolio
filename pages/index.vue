@@ -5,7 +5,7 @@
 			<div v-for="(w,index) in works" :key="w.name" :id="w.name" v-observe-visibility="{callback:visibilityChanged,throttle:index*50+50}" :class="'sm:w-1/2 px-2 mb-4 '+(w.isVisible?'animated fadeInUp':'opacity-0')">
 				<nuxt-link :to="`/${w.name}`">
 					<div class="overflow-hidden cursor-pointer relative trigger">
-						<img class="w-full" :src="`./img/${w.name}.png`">
+						<img class="w-full" :src="`./img/${w.name}/cover.png`">
 						<div class="absolute pin bg-transparent hover:bg-blue-90 flex">
 							<div class="m-auto text-center text-white">
 								<p class="text-2xl font-medium mb-2">{{w.title}}</p>
@@ -35,7 +35,9 @@ export default {
 			{name: 'rewards', title: 'Aston Villa Rewards', text: 'iOS & Android', isVisible: false},
 			{name: 'tickets', title: 'Tickets', text: 'iOS & Android', isVisible: false},
 			{name: 'cast', title: 'InCrowd Cast', text: 'Windows Application', isVisible: false},
-			{name: 'dashboard', title: 'Insights Dashboard', text: 'Web', isVisible: false}
+			{name: 'dashboard', title: 'Insights Dashboard', text: 'Web', isVisible: false},
+			{name: 'madgex', title: 'Madgex', text: '', isVisible: false},
+			{name: 'interaction', title: 'Interaction', text: '', isVisible: false}
 		]
 	})
 }

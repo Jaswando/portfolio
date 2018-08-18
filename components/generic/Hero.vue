@@ -1,9 +1,9 @@
 <template>
 	<div>
 		<div v-resize:debounce="onResize" class="bg-center bg-cover" :style="`background-image: url('${baseImgUrl+name}/${heroW}.png'); height: ${heroH}rem;`"></div>
-		<text-section class="py-12">
-			<p class="font-medium text-3xl mb-12">{{title}}</p>
-			<div class="lg:flex -mx-2">
+		<text-section v-if="title" class="py-12">
+			<p class="font-medium text-3xl">{{title}}</p>
+			<div v-if="role&&team" class="lg:flex -mx-2 mt-12">
 				<div class="mb-4 lg:mb-0 lg:w-1/4 px-2">
 					<p class="font-medium mb-2">MY ROLE</p>
 					<p class="leading-normal">{{role}}</p>
@@ -23,10 +23,9 @@ export default {
 	directives: {resize},
 	props: {
 		name: {type: String, required: true},
-		title: {type: String, required: true},
-		desc: {type: String, required: true},
-		role: {type: String, required: true},
-		team: {type: Array, required: true}
+		title: {type: String},
+		role: {type: String},
+		team: {type: Array}
 	},	
 	created () { this.computeHeroW(window.innerWidth) },
 	methods: {
