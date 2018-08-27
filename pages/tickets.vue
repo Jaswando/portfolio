@@ -30,6 +30,17 @@
 			<paragraph header="Visual design" text="The visual design would follow suit to the existing app while taking a nod from the ticket branding that was present on the physical ticket in the form of polygons. These assets were then made interchangeable between clubs so to keep the product scalable for multiple clubs."/>
 		</text-section>
 		<gallery :imgs="designs" page="tickets" folder="designs"/>
+		<text-section>
+			<paragraph header="User testing" text="We tested our current iteration of the ticket link process with a focus group of users and internally with those not so close to the project. We discovered that most people found the process of a getting a ticket on to their phone confusing. Although they did manage to complete the tasks the time taken to do so was far too long from observing users attempt to understand the notion of ‘Linking an account’."/>
+			<p class="leading-normal font-medium">What we Found</p>
+			<ul class="list-reset mb-12">
+				<li>- Onboarding was not clear - This needed to be concise before throwing a user in to account creation which then asks you to create an account in order to use the ticket functionality. But what account? Is this my ticket account? How is FanScore different?</li>
+				<li>- FanScore Account creation - These views are using a shared library across multiple apps, we found the minimal styling to throw people off, it did not feel like you were still in the app. We decided this needed to be redesigned to remain consistent within each apps branding.</li>
+				<li>- The linking flow itself - I believe we were too focused on overstating how ‘you can instantly link with FanScore’. However this isn’t the value point for users nor do they necessarily fully understand what FanScore facilitates. We needed to simplify the messaging here to actions the user wants to achieve in these instances like ‘Find my Tickets’ or ‘Select your email’ and avoid any jargon we may have initially been trying to force on the user.</li>
+			</ul>
+			<p class="leading-normal font-medium mb-12">Below are the improvements that were made.</p>
+		</text-section>
+		<gallery :imgs="testings" page="tickets" folder="testings"/>
 	</div>
 </template>
 
@@ -43,6 +54,10 @@ export default {
 		},
 		designs () {
 			const context = require.context('~/static/img/tickets/designs', true, /\.png$/)
+			return context.keys().map(k => k.split('/')[1])
+		},
+		testings () {
+			const context = require.context('~/static/img/tickets/testings', true, /\.png$/)
 			return context.keys().map(k => k.split('/')[1])
 		}
 	}
