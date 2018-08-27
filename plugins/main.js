@@ -11,6 +11,7 @@ Vue.component('gallery', Gallery)
 Vue.component('hero', Hero)
 Vue.component('paragraph', Paragraph)
 Vue.component('text-section', TextSection)
+require('intersection-observer')
 // Global mixin
 Vue.mixin({
 	computed: {
